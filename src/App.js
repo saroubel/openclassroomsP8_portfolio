@@ -11,6 +11,8 @@ import { RouterProvider } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
 
 function App() {
+
+// light mode
   const [lightMode, setLightMode] = useState(false); // Made it true if you want to load your site light mode primary
 
   lightMode
@@ -27,6 +29,7 @@ function App() {
     }
   };
 
+// routage
   const router = createBrowserRouter([
     {
       path: "/",
@@ -53,6 +56,7 @@ function App() {
       element: <Notfound />,
     },
   ]);
+
 
   return (
     <>

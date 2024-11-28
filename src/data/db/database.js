@@ -4,7 +4,7 @@ const database = {
   information: {
     name: "Sara Bellaf",
     aboutContent:
-      "Développeur web passionné, je crée des expériences numériques innovantes et fonctionnelles pour transformer des idées en réalité.",
+      "Développeuse web passionnée, je crée des expériences numériques innovantes et fonctionnelles pour transformer mes idées en réalité.",
     age: 30,
     phone: "",
     nationality: "Marocaine",
@@ -17,35 +17,33 @@ const database = {
       linkedin: "https://fr.linkedin.com/in/sara-bellaf-a360a0219",
       facebook: "https://facebook.com",
       twitter: "https://twitter.com",
-      pinterest: "",
-      behance: "",
-      dribbble: ""
+      instagram: "https://instagram.com",
     },
-    brandImage: "/images/mon-portrait.jpg",
-    aboutImage: "/images/about-image.jpg",
-    aboutImageLg: "/images/about-image-lg.jpg",
-    cvfile: "/files/empty.pdf",
+    brandImage: "/images/portrait-sarabellaf.webp",
+    aboutImage: "/images/about-sarabellaf.webp",
+    aboutImageLg: "/images/about-sarabellaf-lg.webp",
+    cvfile: "/files/CVtest.pdf",
   },
 
 
   services: [
     {
-      title: "Developpement Web",
+      title: "Front end",
       icon: "brush-alt",
       details:
-        "Spécialisé dans les technologies web de pointe, je maîtrise HTML5, SASS, JavaScript et React pour créer des sites web performants et esthétiques. ",
+        "Spécialiste des technologies web modernes, maîtrisant HTML5, CSS, Sass, JavaScript et React pour créer des applications dynamiques et des sites élégants, tout en intégrant des pratiques de Green IT pour réduire l'impact environnemental. ",
     },
     {
       title: "Back end",
       icon: "code",
       details:
-        "Développement backend, je crée des API performantes et évolutives en utilisant Node.js et MongoDB.",
+        "Création d'API performantes et évolutives, maîtrise de Node.js, Express, MongoDB et la gestion des données en SQL et NoSQL. Capable d'appeler des données depuis des API ou des fichiers JSON, tout en suivant l'architecture MVC pour structurer les applications Express.",
     },
     {
       title: "Design Responsive",
       icon: "mobile",
       details:
-        "Intégrant les principes de responsive design, je m'assure que chaque élément visuel s'adapte parfaitement aux différentes tailles d'écran, garantissant ainsi une navigation fluide et intuitive",
+        "Intégrant les principes du responsive design, chaque élément visuel s'adapte parfaitement aux différentes tailles d'écran, assurant ainsi une navigation fluide et intuitive sur mobile, tablette et desktop.",
     },
   ],
 
@@ -111,55 +109,102 @@ const database = {
 
 
   portfolios: [
-    {
+    { // Booki
       id: 1,
-      title: "Mon Vieux Grimoire",
-      subtitle: "Dévéloppement du backend qui repose sur Node.js et Express, offrant une base solide et évolutive, tandis que MongoDB assure une gestion efficace et flexible des données.",
-      imageUrl: "/images/node-express-mongodb.jpg",
-      largeImageUrl: ["/images/node-express-mongodb.jpg"],
-      url: "https://github.com/saroubel/openclassroomsP6_Mon_Vieux_Grimoire",
-    },
-    {
-      id: 2,
-      title: "Kasa - Application web de location immobilière",
-      subtitle: "Développement d'une application web de location immobilière entre particuliers avec React.",
-      imageUrl: "/images/Kasa.png",
-      largeImageUrl: [
-        "/images/Kasa.png",
-        "/images/Kasa-2.png",
-        "/images/Kasa-3.png",
-      ],
-      url: "https://github.com/saroubel/openclassroomsP5_KASA",
-    },
-    {
-      id: 3,
-      title: "Projet Nina Carducci",
-      subtitle: "Optimiser le site web d'une photographe professionnelle pour améliorer son référencement SEO.",
-      imageUrl: "/images/Nina-Carducci.png",
-      largeImageUrl: [
-        "/images/Nina-Carducci.png",
-        "/images/Nina-Carducci-2.png",
-      ],
-      url: "https://github.com/saroubel/openclassroomsP5_KASA",
-    },
-    {
-      id: 4,
-      title: "Portfolio Architecte Sophie Bluel",
-      subtitle: "Développement du front-end d'un site portfolio pour une architecte d'intérieur.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: "https://github.com/saroubel/openclassroomsP3",
-    },
-    {
-      id: 5,
-      title: "Booki",
+      title: "Booki - Agence de voyage",
       subtitle: "Création d'un prototype de site web pour une plateforme de réservation d'hébergements.",
-      imageUrl: "/images/booki.png",
+      imageUrl: "/images/booki/booki_box.png",
       largeImageUrl: [
-        "/images/booki.png",
-        "/images/booki-2.png",
-        "/images/booki-3.png",
+        "/images/booki/booki1.png",
+        "/images/booki/booki2.png",
+        "/images/booki/booki3.png",
+        "/images/booki/booki4.png",
+        "/images/booki/booki5.png",
+        "/images/booki/booki6.png",
+        "/images/booki/booki7.png",
       ],
       url: "https://github.com/saroubel/openclassroomsP2",
+    },
+    { //sophie bluel
+      id: 2,
+      title: "Sophie Bluel - Portfolio Architecte",
+      subtitle: "Développement du front-end d'un site portfolio pour une architecte d'intérieur.",
+      imageUrl: "/images/sophiebluel/sophiebluel_box.png",
+      largeImageUrl: [
+        "/images/sophiebluel/sophiebluel1.png",
+        "/images/sophiebluel/sophiebluel2.png",
+        "/images/sophiebluel/sophiebluel3.png",
+        "/images/sophiebluel/sophiebluel4.png",
+        "/images/sophiebluel/sophiebluel5.png",
+        "/images/sophiebluel/sophiebluel6.png",
+        "/images/sophiebluel/sophiebluel7.png",
+      ],
+      url: "https://github.com/saroubel/openclassroomsP3",
+    },
+    { //Nina Carducci
+      id: 3,
+      title: "Nina Carducci - Photographe",
+      subtitle: "Optimiser le site web d'une photographe professionnelle pour améliorer son référencement SEO.",
+      imageUrl: "/images/nina-carducci/ninacarducci_box.jpg",
+      largeImageUrl: [
+        "/images/nina-carducci/ninacarducci1.jpg",
+        "/images/nina-carducci/ninacarducci2.jpg",
+        "/images/nina-carducci/ninacarducci3.jpg",
+        "/images/nina-carducci/ninacarducci4.jpg",
+        "/images/nina-carducci/ninacarducci5.jpg",
+      ],
+      url: "https://github.com/saroubel/openclassroomsP4_new_site",
+    },
+    { //Kasa
+      id: 4,
+      title: "Kasa - Location immobilière",
+      subtitle: "Développement d'une application web de location immobilière entre particuliers avec React.",
+      imageUrl: "/images/kasa/kasa_box.png",
+      largeImageUrl: [
+        "/images/Kasa/kasa1.jpg",
+        "/images/Kasa/kasa1-1.jpg",
+        "/images/Kasa/kasa2.png",
+        "/images/Kasa/kasa2-2.png",
+        "/images/Kasa/kasa3.jpg",
+        "/images/Kasa/kasa3-3.png",
+        "/images/Kasa/kasa4.png",
+        "/images/Kasa/kasa4-4.png",
+        "/images/Kasa/kasa5.png",
+      ],
+      url: "https://github.com/saroubel/openclassroomsP5_KASA",
+    },
+    { //Mon Vieux Grimoire
+      id: 5,
+      title: "Mon Vieux Grimoire - Notation de livres",
+      subtitle: "Dévéloppement du backend qui repose sur Node.js et Express, offrant une base solide et évolutive, tandis que MongoDB assure une gestion efficace et flexible des données.",
+      imageUrl: "/images/grimoire/grimoire_box.png",
+      largeImageUrl: [
+        "/images/grimoire/grimoire1.png",
+        "/images/grimoire/grimoire2.png", 
+        "/images/grimoire/grimoire3.png",
+        "/images/grimoire/grimoire4.png",
+        "/images/grimoire/grimoire5.png",
+        "/images/grimoire/grimoire6.png",
+        "/images/grimoire/grimoire7.png",
+      ],
+      url: "https://github.com/saroubel/openclassroomsP6_Mon_Vieux_Grimoire",
+    },
+    { //Qwenta
+      id: 6,
+      title: "Menu maker by Qwenta",
+      subtitle: "Gestion de projet agile.",
+      imageUrl: "/images/qwenta/qwenta_box.png",
+      largeImageUrl: [
+        "/images/qwenta/qwenta1.png", 
+        "/images/qwenta/qwenta2.png",
+        "/images/qwenta/qwenta3.png",
+        "/images/qwenta/qwenta4.png",
+        "/images/qwenta/qwenta5.png",
+        "/images/qwenta/qwenta6.png",
+        "/images/qwenta/qwenta7.png",
+        "/images/qwenta/qwenta8.png",
+      ],
+      url: "https://github.com/saroubel/openclassroomsP7_Qwenta",
     }
   ],
 
@@ -261,10 +306,10 @@ Mock.onGet("/api/services").reply((config) => {
   return [200, response];
 });
 
-Mock.onGet("/api/reviews").reply((config) => {
-  const response = database.reviews;
-  return [200, response];
-});
+// Mock.onGet("/api/reviews").reply((config) => {
+//   const response = database.reviews;
+//   return [200, response];
+// });
 
 Mock.onGet("/api/skills").reply((config) => {
   const response = database.skills;

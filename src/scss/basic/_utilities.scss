@@ -33,10 +33,22 @@
 
 .mt-30-reverse {
   margin-top: -30px;
+  margin-bottom: 30px;
 }
 
-.mt-30 {
+
+.mt-30 { //card services - about
   margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media #{$layout-tablet} {
+    margin-bottom: 0px; 
+  }
+
+  @media #{$layout-mobile-lg} {
+    margin-bottom: 0px; 
+  }
+ 
 }
 
 .mt-50-reverse {

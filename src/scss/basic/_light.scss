@@ -224,30 +224,9 @@
 		}
 	}
 
-	/*
- * Pagination
- */
-
-	.mi-pagination {
-		li {
-			a {
-				border-color: $light-color-theme;
-				color: $light-color-theme;
-			}
-
-			&.is-active {
-				a {
-					background: $light-color-theme;
-					color: #ffffff;
-				}
-			}
-		}
-	}
-
 	/**
  * Header Styles
  */
-
 	.mi-header {
 		background: darken($light-color-bg-body, 5);
 		border-color: $light-color-border;
@@ -308,7 +287,6 @@
 	/*
  * Social Icons
  */
-
 	.mi-socialicons {
 		li {
 			a {
@@ -336,7 +314,6 @@
 	/*
  * Title 
  */
-
 	.mi-sectiontitle {
 		span {
 			color: rgba(215, 220, 230, 0.44);
@@ -362,7 +339,6 @@
 	/*
  * Progress Bar
  */
-
 	.mi-progress {
 		&-container {
 			background: $light-color-border;
@@ -376,7 +352,6 @@
 	/**
  * Service
  */
-
 	.mi-service {
 		border-color: $light-color-border;
 		background: darken($light-color-bg-body, 5);
@@ -399,7 +374,6 @@
 	/*
  * Portfolio
  */
-
 	.mi-portfolio {
 		&-image {
 			&::before {
@@ -443,7 +417,6 @@
 	/*
  * Resume 
  */
-
 	.mi-resume {
 		&-wrapper {
 			border-color: $light-color-border;
@@ -476,31 +449,8 @@
 	}
 
 	/**
- * Service
- */
-
-	.mi-testimonial {
-		&-content {
-			border-color: $light-color-border;
-			background: darken($light-color-bg-body, 5);
-
-			&::after {
-				border-color: darken($light-color-bg-body, 5) transparent
-					transparent darken($light-color-bg-body, 5);
-			}
-		}
-
-		&-author {
-			h6 {
-				color: $light-color-body;
-			}
-		}
-	}
-
-	/**
  * Form Styles
  */
-
 	.mi-form {
 		&-field {
 			label {
@@ -517,7 +467,6 @@
 	/**
  * Blog Styels
  */
-
 	.mi-blog {
 		background: darken($light-color-bg-body, 5);
 
@@ -552,7 +501,6 @@
 	/*
  * About Styles
  */
-
 	.mi-about {
 		&-image {
 			&::before {
@@ -572,7 +520,6 @@
 	/**
  * Contact
  */
-
 	.mi-contact {
 		&-infoblock {
 			background: rgba(darken($light-color-bg-body, 5), 1);

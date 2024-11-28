@@ -4,6 +4,8 @@
 	"license": "MIT",
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
+		"@fortawesome/free-solid-svg-icons": "^6.7.1",
+		"@fortawesome/react-fontawesome": "^0.2.2",
 		"@ohs/use-progressive-image": "^2.0.1",
 		"@tsparticles/react": "^3.0.0",
 		"@tsparticles/slim": "^3.5.0",

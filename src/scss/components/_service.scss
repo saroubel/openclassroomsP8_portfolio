@@ -8,6 +8,7 @@
   padding: 30px;
   background: lighten($color-bg-body, 5);
   transition: $transition;
+  min-height: 390px;
 
   &-icon {
     margin-bottom: 20px;
@@ -43,10 +44,26 @@
   }
 
   @media #{$layout-laptop}{
+    padding: 20px; 
+    height: 455px;
+  }
+
+  @media #{$layout-notebook}{
     padding: 20px;
+    height: 455px; 
+  }
+
+  @media #{$layout-tablet} {
+    height: 410px; 
+  }
+
+  @media #{$layout-mobile-lg}{
+    padding: 20px;
+    min-height: auto; 
   }
 
   @media #{$layout-mobile-sm}{
     padding: 20px;
+    min-height: auto; 
   }
 }

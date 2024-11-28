@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
-import Pagination from "../components/Pagination";
 import PortfoliosView from "../components/PortfoliosView";
 import Sectiontitle from "../components/Sectiontitle";
 import Spinner from "../components/Spinner";
@@ -29,10 +28,10 @@ function Portfolios() {
     indexOfLastPortfolios
   );
 
-  const paginate = (e, pageNumber) => {
-    e.preventDefault();
-    setCurrentPage(pageNumber);
-  };
+  // const paginate = (e, pageNumber) => {
+  //   e.preventDefault();
+  //   setCurrentPage(pageNumber);
+  // };
 
   return (
     <Layout>
@@ -46,9 +45,11 @@ function Portfolios() {
       <Suspense fallback={<Spinner />}>
         <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
           <div className="container">
-            <Sectiontitle title="Portfolios" />
+            <Sectiontitle title="Mes projets" />
+
             {<PortfoliosView portfolios={currentPortfolios} />}
-            {!(portfolios.length > portfoliosPerPage) ? null : (
+
+            {/* {!(portfolios.length > portfoliosPerPage) ? null : (
               <Pagination
                 className="mt-50"
                 itemsPerPage={portfoliosPerPage}
@@ -56,7 +57,7 @@ function Portfolios() {
                 paginate={paginate}
                 currentPage={currentPage}
               />
-            )}
+            )} */}
           </div>
         </div>
       </Suspense>

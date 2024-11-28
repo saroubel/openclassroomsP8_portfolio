@@ -51,12 +51,12 @@ function Header() {
           </li>
           <li>
             <NavLink to="/resume">
-              <span>CV</span>
+              <span>Mon CV</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/portfolios">
-              <span>Portfolios</span>
+              <span>Mes projets</span>
             </NavLink>
           </li>
           <li>
