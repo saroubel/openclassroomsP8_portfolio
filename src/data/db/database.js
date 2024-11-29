@@ -112,7 +112,7 @@ const database = {
     { // Booki
       id: 1,
       title: "Booki - Agence de voyage",
-      subtitle: "Création d'un prototype de site web pour une plateforme de réservation d'hébergements.",
+      subtitle: "Création d'un prototype de site web pour une plateforme de réservation d'hébergements et d'activités, développé en HTML et CSS. Ce site est responsive, s'adaptant à tous types d'écrans pour offrir une expérience utilisateur optimale.",
       imageUrl: "/images/booki/booki_box.webp",
       largeImageUrl: [
         "/images/booki/booki1.webp",
@@ -128,7 +128,7 @@ const database = {
     { //sophie bluel
       id: 2,
       title: "Sophie Bluel - Portfolio Architecte",
-      subtitle: "Développement du front-end d'un site portfolio pour une architecte d'intérieur.",
+      subtitle: "Développement du front-end d'un site portfolio pour une architecte d'intérieur, avec une interface dynamique en JavaScript et communication avec une API. Les tâches incluent la transformation de la galerie en version dynamique et la création d'une page de connexion admin sécurisée. Développement d'une modale pour gérer les travaux.",
       imageUrl: "/images/sophiebluel/sophiebluel_box.webp",
       largeImageUrl: [
         "/images/sophiebluel/sophiebluel1.webp",
@@ -144,7 +144,7 @@ const database = {
     { //Nina Carducci
       id: 3,
       title: "Nina Carducci - Photographe",
-      subtitle: "Optimiser le site web d'une photographe professionnelle pour améliorer son référencement SEO.",
+      subtitle: "Optimisation du site web d'une photographe professionnelle pour améliorer son référencement SEO, incluant un audit avec Lighthouse et Wave. Amélioration des performances et de l'accessibilité. Intégration de l'optimisation du référencement local avec Schema.org, et l'ajout de métadonnées pour les réseaux sociaux. Développement de fonctionnalités pour la galerie.",
       imageUrl: "/images/nina-carducci/ninacarducci_box.webp",
       largeImageUrl: [
         "/images/nina-carducci/ninacarducci1.webp",
@@ -158,7 +158,7 @@ const database = {
     { //Kasa
       id: 4,
       title: "Kasa - Location immobilière",
-      subtitle: "Développement d'une application web de location immobilière entre particuliers avec React.",
+      subtitle: "Développement d'une application web de location immobilière entre particuliers avec React, React Router et SASS. Création d'une interface utilisateur moderne en utilisant des composants React, des Hooks, et en intégrant des données depuis un fichier JSON. Implémentation de la navigation entre les pages et respect fidèle de la maquette Figma pour le design.",
       imageUrl: "/images/kasa/kasa_box.webp",
       largeImageUrl: [
         "/images/Kasa/kasa1.webp",
@@ -176,7 +176,7 @@ const database = {
     { //Mon Vieux Grimoire
       id: 5,
       title: "Mon Vieux Grimoire - Notation de livres",
-      subtitle: "Dévéloppement du backend qui repose sur Node.js et Express, offrant une base solide et évolutive, tandis que MongoDB assure une gestion efficace et flexible des données.",
+      subtitle: "Développement d'une plateforme de notation de livres avec un backend basé sur Node.js et Express, utilisant MongoDB pour une gestion efficace des données. Création d'un serveur back-end pour les opérations CRUD, avec sécurité des données et authentification des utilisateurs. Utilisation de Bcrypt pour le hachage des mots de passe, JWT pour les tokens, et DotEnv pour sécuriser les données sensibles.",
       imageUrl: "/images/grimoire/grimoire_box.webp",
       largeImageUrl: [
         "/images/grimoire/grimoire1.webp",
@@ -192,7 +192,7 @@ const database = {
     { //Qwenta
       id: 6,
       title: "Menu maker by Qwenta",
-      subtitle: "Gestion de projet agile.",
+      subtitle: "Gestion de projet agile avec la méthodologie Scrum, impliquant la planification des sprints et la création d'un tableau Kanban pour suivre l'avancement. Cette approche permet une flexibilité et une adaptation rapide aux changements, tout en favorisant la collaboration entre les membres de l'équipe. Utilisation d'outils de gestion de projet et veille technologique avec Feedly pour rester informé des tendances et des nouvelles technologies.",
       imageUrl: "/images/qwenta/qwenta_box.webp",
       largeImageUrl: [
         "/images/qwenta/qwenta1.webp", 
@@ -214,27 +214,43 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
-        position: "Frontend Web Developer",
-        company: "Abc Company",
+        year: "2019",
+        position: "Technicienne d'informatique",
+        company: "MIF Maroc",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "Support technique, Agile, Veille technologique.",
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        position: "Frontend Web Developer",
-        company: "CBA Company",
+        year: "2018",
+        position: "Technicienne d'exploitation",
+        company: "MIZU Maroc",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "Support utilisateur, gestion des données, surveillance et dépannage, Agile.",
       },
       {
         id: 3,
-        year: "2014 - 1016",
-        position: "UI/UX Designer",
-        company: "Example Company",
+        year: "2017",
+        position: "Gestionnaire de base de données",
+        company: "AXIATEK",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "Support technique, gestion des données comptables, sécurité des données, reporting, veille réglementaire.",
+      },
+      {
+        id: 3,
+        year: "2016",
+        position: "Développeuse informatique",
+        company: "Trésorerie Générale du Royaume de Casablanca",
+        details:
+          "Analyse des besoins, proposition de solutions, audit du système, mise en œuvre, maintenance et mise à jour. ",
+      },
+      {
+        id: 4,
+        year: "2015",
+        position: "Développeuse C#",
+        company: "Ministère de l’Economie et des Finances - Administration des douanes et impôts indirects de Casablanca",
+        details:
+          "Développement d'une application de gestion de parc informatique avec C# et SQL Server.",
       },
     ],
 
@@ -253,7 +269,7 @@ const database = {
         graduation: "Licence pro en Génie logiciel, système d'information et objets connectés (IoT)",
         university: "IUT Paris Descartes",
         details:
-          "Java, PHP, MYSQL, GIT, Agile",
+          "Programmation web, Méthodes Agile, Java, Environnement J2EE, PHP, MYSQL, Systèmes et réseaux, GIT, Linux.",
       },
       {
         id: 3,
@@ -285,8 +301,102 @@ const database = {
         graduation: "Baccalaureat spécialité Physique-Chimie",
       },
     ],
-  },
 
+    certificationsExperience: [
+      // {
+      //   id: 1,
+      //   year: "2024",
+      //   name: "Développeur Agile",
+      //   company: "OpenClassrooms",
+      //   // details: "https://openclassrooms.com/fr/course-certificates/1655706154"
+      // },
+      // {
+      //   id: 2,
+      //   year: "2024",
+      //   name: "Green IT",
+      //   company: "OpenClassrooms",
+      //   // details: "https://openclassrooms.com/fr/course-certificates/8892857478"
+      // },
+      // {
+      //   id: 3,
+      //   year: "2024",
+      //   name: "Node.js, Express et MongoDB",
+      //   company: "OpenClassrooms",
+      //   // details: "https://openclassrooms.com/fr/course-certificates/5467955629"
+      // },
+      // {
+      //   id: 4,
+      //   year: "2024",
+      //   name: "React",
+      //   company: "OpenClassrooms",
+      //   // details: "https://openclassrooms.com/fr/course-certificates/3992926198"
+      // },
+      // {
+      //   id: 5,
+      //   year: "2024",
+      //   name: "SASS",
+      //   company: "OpenClassrooms",
+      //   // details: "https://openclassrooms.com/fr/course-certificates/1796038214"
+      // },
+      // {
+      //   id: 6,
+      //   year: "2024",
+      //   name: "JavaScript",
+      //   company: "OpenClassrooms",
+      //   // details: "https://openclassrooms.com/fr/course-certificates/3839013942"
+      // },
+      // {
+      //   id: 7,
+      //   year: "2024",
+      //   name: "HTML5 & CSS3",
+      //   company: "OpenClassrooms",
+      //   // details: "https://openclassrooms.com/fr/course-certificates/3508424691"
+      // },
+      // {
+      //   id: 8,
+      //   year: "2024",
+      //   name: "Git & GitHub",
+      //   company: "OpenClassrooms",
+      //   // details: "https://openclassrooms.com/fr/course-certificates/8225210198"
+      // },
+      {
+        id: 9,
+        year: "2024",
+        name: "Analyse de données",
+        company: "Microsoft & LinkedIn",
+        details: "https://www.linkedin.com/learning/certificates/59892a9da3583423db45cdbaa110ae82f9ab8c97c6111cd24e4149c9e144e038"
+      },
+      {
+        id: 10,
+        year: "2017",
+        name: "Administering Microsoft SQL Server 2012/2014 Databases (MCSA) - 70-462",
+        company: "Microsoft",
+        details: "Certification : G403-5863"
+      },
+      {
+        id: 11,
+        year: "2017",
+        name: "Implementing a Data Warehouse with Microsoft SQL Server 2012/2014 (MCSA) - 70-463",
+        company: "Microsoft",
+        details: "Certification : G403-5863"
+      },
+      {
+        id: 12,
+        year: "2017",
+        name: "Querying Microsoft SQL Server 2012/2014 (MCP) - 70-461 ",
+        company: "Microsoft",
+        details: "Certification  : GO50-2174"
+      },
+      {
+        id: 13,
+        year: "2014",
+        name: "Microsoft Office Word 2010 - 77-881",
+        company: "Microsoft",
+        details: "https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=120&cvid=2nhcOY024O+nydQZU5d4LQ=="
+      },
+    ],  
+    
+  },
 
   contactInfo: {
     phoneNumbers: ["+0600000000"],
@@ -306,11 +416,6 @@ Mock.onGet("/api/services").reply((config) => {
   const response = database.services;
   return [200, response];
 });
-
-// Mock.onGet("/api/reviews").reply((config) => {
-//   const response = database.reviews;
-//   return [200, response];
-// });
 
 Mock.onGet("/api/skills").reply((config) => {
   const response = database.skills;

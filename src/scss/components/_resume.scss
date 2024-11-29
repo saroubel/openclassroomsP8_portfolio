@@ -63,6 +63,13 @@
     p {
       margin-bottom: 0;
     }
+    // a {
+    //   color: $color-body;
+
+    //   &:hover {
+    //     color: $color-theme;
+    //   }
+    // }
   }
 
   @media #{$layout-notebook} {

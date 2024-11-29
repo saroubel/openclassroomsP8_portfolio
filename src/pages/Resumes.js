@@ -1,3 +1,4 @@
+// page Resumes
 import axios from "axios";
 import React, { Suspense, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -13,6 +14,7 @@ function Resumes() {
   const [skills, setSkills] = useState([]);
   const [workingExperience, setWorkingExperience] = useState([]);
   const [educationExperience, setEducationExperience] = useState([]);
+  const [certificationsExperience, setCertificationsExperience] = useState([]); 
 
   useEffect(() => {
     axios.get("/api/skills").then((response) => {
@@ -21,6 +23,7 @@ function Resumes() {
     axios.get("/api/experience").then((response) => {
       setWorkingExperience(response.data.workingExperience);
       setEducationExperience(response.data.educationExperience);
+      setCertificationsExperience(response.data.certificationsExperience); 
     });
   }, []);
 
@@ -36,7 +39,7 @@ function Resumes() {
 
       <Suspense fallback={<Spinner />}>
       {/* compétences */}
-        <div className="mi-skills-area mi-section mi-padding-top">
+        {/* <div className="mi-skills-area mi-section mi-padding-top">
           <div className="container">
             <Sectiontitle title="Mes compétences" />
             <div className="mi-skills">
@@ -53,35 +56,43 @@ function Resumes() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
 
       {/* résumé */}
         <div className="mi-resume-area mi-section mi-padding-top mi-padding-bottom">
           <div className="container">
             <Sectiontitle title="Résumé" />
-            {/* expériences pro */}
-            <Smalltitle title="Expériences professionnelles" icon="briefcase" />
-            {/* <div className="mi-resume-wrapper">
-              {workingExperience.map((workingExp) => (
-                <Resume key={workingExp.id} resumeData={workingExp} />
-              ))}
-            </div> */}
-            <div className="mt-30"></div>
-            {/* formation */}
+
+            {/* formations */}
             <Smalltitle title="Formations" icon="book" />
             <div className="mi-resume-wrapper">
               {educationExperience.map((educatonExp) => (
                 <Resume key={educatonExp.id} resumeData={educatonExp} />
               ))}
             </div>
+
             <div className="mt-30"></div>
+
             {/* Certificats */}
             <Smalltitle title="Certifications" icon="book" />
-            {/* <div className="mi-resume-wrapper">
-              {educationExperience.map((educatonExp) => (
-                <Resume key={educatonExp.id} resumeData={educatonExp} />
+            <div className="mi-resume-wrapper">
+              {certificationsExperience.map((certifExp) => (
+                <Resume key={certifExp.id} resumeData={certifExp} />
               ))}
-            </div> */}
+            </div>
+
+            <div className="mt-30"></div>
+
+            {/* expériences pro */}
+            <Smalltitle title="Expériences professionnelles" icon="briefcase" />
+            <div className="mi-resume-wrapper">
+              {workingExperience.map((workingExp) => (
+                <Resume key={workingExp.id} resumeData={workingExp} />
+              ))}
+            </div>
+
+            
           </div>
         </div>
       </Suspense>
