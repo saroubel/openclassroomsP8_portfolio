@@ -13,7 +13,7 @@ import { createBrowserRouter } from "react-router-dom";
 function App() {
 
 // light mode
-  const [lightMode, setLightMode] = useState(false); // Made it true if you want to load your site light mode primary
+  const [lightMode, setLightMode] = useState(false);    // True si on veut mode light par default , false pour le mode dark
 
   lightMode
     ? document.body.classList.add("light")

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
+import Particles, { initParticlesEngine } from "@tsparticles/react";    
+import { loadSlim } from "@tsparticles/slim";                           //module qui permet de charger l'engine slim pour l'animation
 
 function Particle({ lightMode }) {
   const [init, setInit] = useState(false);
@@ -83,6 +83,8 @@ function Particle({ lightMode }) {
     },
   };
 
+
+  // Animation particle dans le background de la page Home
   return (
     init && (
       <Particles

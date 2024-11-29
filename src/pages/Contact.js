@@ -5,8 +5,7 @@ import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Sectiontitle from "../components/Sectiontitle";
 import Spinner from "../components/Spinner";
-//Import Email JS
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';  //Import Email JS
 
 function Contact() {
   const [phoneNumbers, setPhoneNumbers] = useState([]);
@@ -42,6 +41,8 @@ function Contact() {
     }
   };
   
+
+
   // Fonction pour envoyer vers EmailJS
   const sendEmail = () => {
     console.log("envoi de mail ");
@@ -105,8 +106,10 @@ function Contact() {
           content="Page contact du Portfolio Personel de Sara Bellaf"
         />
       </Helmet>
+
       <Suspense fallback={<Spinner />}>
         <div className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">
+
           <div className="container">
             <Sectiontitle title="Contactez-moi" />
             <div className="row">

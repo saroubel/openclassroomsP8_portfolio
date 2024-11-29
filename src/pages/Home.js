@@ -15,6 +15,7 @@ function Home({ lightMode }) {
     });
   }, []);
 
+  
   return (
     <Layout>
       <Helmet>
@@ -24,9 +25,15 @@ function Home({ lightMode }) {
           content="Page Accueil Portfolio de Sara Bellaf"
         />
       </Helmet>
-      <Suspense fallback={<Spinner />}>
+
+      <Suspense fallback={<Spinner />}> 
+
         <div className="mi-home-area mi-padding-section">
-          <Particle lightMode={lightMode} />
+
+          {/* animation */}
+          <Particle lightMode={lightMode} /> 
+
+          {/* contenu de la page */}
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-10 col-12">
@@ -36,7 +43,9 @@ function Home({ lightMode }) {
                     <span className="color-theme">{information.name}</span>
                   </h1>
                   <p>{information.aboutContent}</p>
+
                   <Socialicons bordered />
+                  
                 </div>
               </div>
             </div>

@@ -364,35 +364,35 @@ const database = {
         year: "2024",
         name: "Analyse de données",
         company: "Microsoft & LinkedIn",
-        details: "https://www.linkedin.com/learning/certificates/59892a9da3583423db45cdbaa110ae82f9ab8c97c6111cd24e4149c9e144e038"
+        // details: "https://www.linkedin.com/learning/certificates/59892a9da3583423db45cdbaa110ae82f9ab8c97c6111cd24e4149c9e144e038"
       },
       {
         id: 10,
         year: "2017",
         name: "Administering Microsoft SQL Server 2012/2014 Databases (MCSA) - 70-462",
         company: "Microsoft",
-        details: "Certification : G403-5863"
+        // details: "Certification : G403-5863"
       },
       {
         id: 11,
         year: "2017",
         name: "Implementing a Data Warehouse with Microsoft SQL Server 2012/2014 (MCSA) - 70-463",
         company: "Microsoft",
-        details: "Certification : G403-5863"
+        // details: "Certification : G403-5863"
       },
       {
         id: 12,
         year: "2017",
         name: "Querying Microsoft SQL Server 2012/2014 (MCP) - 70-461 ",
         company: "Microsoft",
-        details: "Certification  : GO50-2174"
+        // details: "Certification  : GO50-2174"
       },
       {
         id: 13,
         year: "2014",
         name: "Microsoft Office Word 2010 - 77-881",
         company: "Microsoft",
-        details: "https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=120&cvid=2nhcOY024O+nydQZU5d4LQ=="
+        // details: "https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=120&cvid=2nhcOY024O+nydQZU5d4LQ=="
       },
     ],  
     
