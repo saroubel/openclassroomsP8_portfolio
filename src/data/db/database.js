@@ -51,27 +51,19 @@ const database = {
   skills: [
     {
       title: "HTML5",
-      value: 100,
+      value: 95,
     },
     {
-      title: "CSS3",
-      value: 100,
+      title: "CSS3 & SASS ",
+      value: 90,
     },
     {
       title: "Javascript",
-      value: 80,
-    },
-    {
-      title: "SASS",
-      value: 90,
-    },
-    {
-      title: "SEO",
-      value: 90,
+      value: 75,
     },
     {
       title: "ReactJs",
-      value: 80,
+      value: 70,
     },
     {
       title: "NodeJs",
@@ -79,6 +71,10 @@ const database = {
     },
     {
       title: "ExpressJs",
+      value: 70,
+    },
+    {
+      title: "SQL / MySQL / Oracle",
       value: 80,
     },
     {
@@ -86,24 +82,20 @@ const database = {
       value: 75,
     },
     {
+      title: "SEO",
+      value: 90,
+    },
+    {
       title: "Git",
       value: 90,
     },
     {
-      title: "Oracle",
-      value: 70,
-    },
-    {
-      title: "SQL",
-      value: 75,
-    },
-    {
-      title: "Agile",
-      value: 70,
-    },
-    {
       title: "Gestion de projet",
       value: 80,
+    },
+    {
+      title: "Java & C#",
+      value: 65,
     },
   ],
 
@@ -398,12 +390,14 @@ const database = {
     
   },
 
+  
   contactInfo: {
     phoneNumbers: ["+0600000000"],
     emailAddress: ["bellaf.sara@gmail.com"],
     address: "Paris, France",
   },
 };
+
 
 
 // API 

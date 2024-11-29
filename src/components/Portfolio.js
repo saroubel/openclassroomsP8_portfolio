@@ -13,12 +13,15 @@ function Portfolio(props) {
 
   return (
     <div className="mi-portfolio mi-portfolio-visible">
+
+      {/* box du projet cliquable */}
       <div className="mi-portfolio-image">
         <Image
           src={imageUrl}
           loader="/images/portfolio-image-placeholder.png"
           alt={title}
         />
+
         <ul>
           {!largeImageUrl ? null : (
             <li>
@@ -36,19 +39,24 @@ function Portfolio(props) {
           ) : null}
         </ul>
       </div>
+
+      {/* Nom du projet cliquable nous guider vers Github */}
       {!url ? (
         <h5>{title}</h5>
       ) : (
         <h5>
-          <a rel="noopener noreferrer" target="_blank" href={url}>
-            {title}
-          </a>
+          <a rel="noopener noreferrer" target="_blank" href={url}> {title} </a>
         </h5>
       )}
+
+      {/* Description du projet */}
       {subtitle ? <h6>{subtitle}</h6> : null}
+
+      {/* photos détaillées du projet */}
       {!largeImageUrl ? null : (
         <FsLightbox toggler={toggler} sources={largeImageUrl} />
       )}
+
     </div>
   );
 }

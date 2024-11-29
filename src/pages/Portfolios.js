@@ -20,10 +20,11 @@ function Portfolios() {
     return () => (mounted = false);
   }, []);
 
+  
   return (
     <Layout>
       <Helmet>
-        <title>Portfolio - Portfolio Personel de Sara Bellaf</title>
+        <title>projets - Portfolio de Sara Bellaf</title>
         <meta
           name="description"
           content="Page projets du Portfolio Personel de Sara Bellaf"

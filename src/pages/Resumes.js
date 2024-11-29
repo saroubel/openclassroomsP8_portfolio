@@ -39,7 +39,7 @@ function Resumes() {
 
       <Suspense fallback={<Spinner />}>
       {/* compétences */}
-        {/* <div className="mi-skills-area mi-section mi-padding-top">
+        <div className="mi-skills-area mi-section mi-padding-top">
           <div className="container">
             <Sectiontitle title="Mes compétences" />
             <div className="mi-skills">
@@ -56,7 +56,7 @@ function Resumes() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
 
       {/* résumé */}
