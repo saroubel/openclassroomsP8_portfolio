@@ -9,7 +9,10 @@ import Portfolios from "./pages/Portfolios";
 import Resumes from "./pages/Resumes";
 import { RouterProvider } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
+  // import { createHashRouter} from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
+  
 function App() {
 
 // light mode
@@ -30,32 +33,32 @@ function App() {
   };
 
 // routage
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home lightMode={lightMode} />,
-    },
-    {
-      path: "/about",
-      element: <About />,
-    },
-    {
-      path: "/resume",
-      element: <Resumes />,
-    },
-    {
-      path: "/portfolios",
-      element: <Portfolios />,
-    },
-    {
-      path: "/contact",
-      element: <Contact />,
-    },
-    {
-      path: "*",
-      element: <Notfound />,
-    },
-  ]);
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <Home lightMode={lightMode} />,
+  //   },
+  //   {
+  //     path: "/about",
+  //     element: <About />,
+  //   },
+  //   {
+  //     path: "/resume",
+  //     element: <Resumes />,
+  //   },
+  //   {
+  //     path: "/portfolios",
+  //     element: <Portfolios />,
+  //   },
+  //   {
+  //     path: "/contact",
+  //     element: <Contact />,
+  //   },
+  //   {
+  //     path: "*",
+  //     element: <Notfound />,
+  //   },
+  // ]);
 
 
   return (
@@ -71,7 +74,19 @@ function App() {
           onClick={() => handleMode()}
         ></button>
       </div>
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+
+      <HashRouter>
+      <Routes>
+        <Route path="/" element={<Navigate replace to="/accueil" />} />
+        <Route path="/accueil" element={<Home lightMode={lightMode} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resumes/>} />    
+        <Route path="/portfolios" element={<Portfolios/>} />    
+        <Route path="/contact" element={<Contact/>} />    
+        <Route path="*" element={<Notfound />} />                      
+      </Routes>
+    </HashRouter>
     </>
   );
 }
