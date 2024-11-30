@@ -7,9 +7,8 @@ import Home from "./pages/Home";
 import Notfound from "./pages/Notfound";
 import Portfolios from "./pages/Portfolios";
 import Resumes from "./pages/Resumes";
-import { RouterProvider } from "react-router-dom";
-import { createBrowserRouter } from "react-router-dom";
-  // import { createHashRouter} from "react-router-dom";
+// import { RouterProvider } from "react-router-dom";
+// import { createBrowserRouter } from "react-router-dom";
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
   
