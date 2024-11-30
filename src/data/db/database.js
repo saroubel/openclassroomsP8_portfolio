@@ -19,9 +19,9 @@ const database = {
       twitter: "https://twitter.com",
       instagram: "https://instagram.com",
     },
-    brandImage: "/images/portrait-sarabellaf.webp",
-    aboutImage: "/images/about-sarabellaf.webp",
-    aboutImageLg: "/images/about-sarabellaf-lg.webp",
+    brandImage: "images/portrait-sarabellaf.webp",
+    aboutImage: "images/about-sarabellaf.webp",
+    aboutImageLg: "images/about-sarabellaf-lg.webp",
     cvfile: "files/CVtest.pdf",
   },
 
@@ -406,7 +406,7 @@ Mock.onGet("/api/information").reply((config) => {
   return [200, response];
 });
 
-Mock.onGet("/api/services").reply((config) => {
+Mock.onGet("/api/services").reply((config) => { 
   const response = database.services;
   return [200, response];
 });
