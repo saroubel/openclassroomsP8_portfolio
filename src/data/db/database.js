@@ -22,7 +22,7 @@ const database = {
     brandImage: "/images/portrait-sarabellaf.webp",
     aboutImage: "/images/about-sarabellaf.webp",
     aboutImageLg: "/images/about-sarabellaf-lg.webp",
-    cvfile: "/files/CVtest.pdf",
+    cvfile: "files/CVtest.pdf",
   },
 
 

@@ -2,7 +2,7 @@
 	"name": "portfolio-sara",
 	"version": "6.0.0",
 	"license": "MIT",
-	"homepage": ".",
+	"homepage": "https://saroubel.github.io/openclassroomsP8_portfolio",
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
 		"@fortawesome/free-solid-svg-icons": "^6.7.1",
