@@ -18,7 +18,6 @@ function Portfolio(props) {
       <div className="mi-portfolio-image">
         <Image
           src={imageUrl}
-          loader="/images/portfolio-image-placeholder.png"
           alt={title}
         />
 
