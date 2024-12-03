@@ -20,6 +20,7 @@ function Header() {
 
   return (
     <nav className={navigationToggler ? "mi-header is-visible" : "mi-header"}>
+
       <button onClick={handleNavigationToggler} className="mi-header-toggler">
         {!navigationToggler ? (
           <LineIcon name="menu" />
@@ -27,6 +28,7 @@ function Header() {
           <LineIcon name="close" />
         )}
       </button>
+
       <div className="mi-header-inner">
         <div className="mi-header-image">
           <Link to="/">
@@ -65,6 +67,7 @@ function Header() {
             </NavLink>
           </li>
         </ul>
+        
         <p className="mi-header-copyright">
           &copy; {new Date().getFullYear()}{" "}
           <b>

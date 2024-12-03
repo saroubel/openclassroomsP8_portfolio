@@ -20,6 +20,7 @@ function Contact() {
   const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
 
+  // Fonction de soumission du formulaire verifie si tous les champs sont remplis
   const submitHandler = (event) => {
     event.preventDefault();
     if (!formdata.name) {
@@ -35,38 +36,53 @@ function Contact() {
       setError(true);
       setMessage("Message est requis");
     } else {
-      setError(false);
-      sendEmail(); // Appel de la fonction sendEmail pour envoyer le mail
+      setError(false);  // Réinitialise l'état d'erreur
+      sendEmail();      // Appel de la fonction sendEmail pour envoyer le mail
 
     }
   };
   
 
+  // Fonction pour envoyer vers EmailJS + timer msg
+const sendEmail = () => {
+  console.log("envoi de mail ");
 
-  // Fonction pour envoyer vers EmailJS
-  const sendEmail = () => {
-    console.log("envoi de mail ");
-  
-    emailjs
-      .send(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, {
-        nom: formdata.name,
-        email: formdata.email,
-        subject: formdata.subject,
-        message: formdata.message
-      }, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
-      .then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text);
-          setMessage("Votre message a été envoyé !");
-        },
-        (error) => {
-          console.log('FAILED...', error);
-          setMessage("Échec de l'envoi du message. Veuillez réessayer.");
-        },
-      );
-  };
+  emailjs
+    .send(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, {
+      nom: formdata.name,
+      email: formdata.email,
+      subject: formdata.subject,
+      message: formdata.message
+    }, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
+    .then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setMessage("Votre message a été envoyé !");
+        // Réinitialiser le formulaire
+        setFormdata({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+        // Timer pour effacer le message après 3 secondes
+        setTimeout(() => {
+          setMessage("");
+        }, 2000);
+      },
+      (error) => {
+        console.log('FAILED...', error);
+        setMessage("Échec de l'envoi du message. Veuillez réessayer.");
+        // Timer pour effacer le message
+        setTimeout(() => {
+          setMessage("");
+        }, 2000);
+      },
+    );
+};
 
 
+ // Fonction de mise à jour des champs de formulaire
   const handleChange = (event) => {
     setFormdata({
       ...formdata,
@@ -74,11 +90,15 @@ function Contact() {
     });
   };
 
+
+  // Fonction pour formater le numéro de teléphone
   const numberFormatter = (number) => {
     const phnNumber = number;
     return phnNumber;
   };
 
+
+  // Fonction pour afficher les alertes
   const handleAlerts = () => {
     if (error && message) {
       return <div className="alert alert-danger mt-4">{message}</div>;
@@ -89,6 +109,8 @@ function Contact() {
     }
   };
 
+
+  // Fonction pour afficher les informations de contact depuis l'API 
   useEffect(() => {
     axios.get("/api/contactinfo").then((response) => {
       setPhoneNumbers(response.data.phoneNumbers);
@@ -97,6 +119,8 @@ function Contact() {
     });
   }, []);
 
+
+  // Affichage de la page
   return (
     <Layout>
       <Helmet>

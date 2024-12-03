@@ -59,7 +59,7 @@ const database = {
     },
     {
       title: "Javascript",
-      value: 75,
+      value: 65,
     },
     {
       title: "ReactJs",
@@ -75,11 +75,11 @@ const database = {
     },
     {
       title: "SQL / MySQL / Oracle",
-      value: 80,
+      value: 75,
     },
     {
       title: "MangoDB",
-      value: 75,
+      value: 65,
     },
     {
       title: "SEO",
@@ -98,7 +98,7 @@ const database = {
       value: 65,
     },
   ],
-
+  
 
   portfolios: [
     { // Booki

@@ -9,3 +9,6 @@ function Spinner() {
 }
 
 export default Spinner;
+
+
+//composant pour afficher une animation de chargement en cas les opérations prennent du temps

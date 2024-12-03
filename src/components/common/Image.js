@@ -9,3 +9,7 @@ export function Image({ src, loader, ...props }) {
 
   return <img src={loading ? loader : src} {...props} />;
 }
+
+
+
+// composant pour le chargement progressif d'images

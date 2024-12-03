@@ -7,8 +7,6 @@ import Home from "./pages/Home";
 import Notfound from "./pages/Notfound";
 import Portfolios from "./pages/Portfolios";
 import Resumes from "./pages/Resumes";
-// import { RouterProvider } from "react-router-dom";
-// import { createBrowserRouter } from "react-router-dom";
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
   
@@ -31,35 +29,6 @@ function App() {
     }
   };
 
-// routage
-  // const router = createBrowserRouter([
-  //   {
-  //     path: "/",
-  //     element: <Home lightMode={lightMode} />,
-  //   },
-  //   {
-  //     path: "/about",
-  //     element: <About />,
-  //   },
-  //   {
-  //     path: "/resume",
-  //     element: <Resumes />,
-  //   },
-  //   {
-  //     path: "/portfolios",
-  //     element: <Portfolios />,
-  //   },
-  //   {
-  //     path: "/contact",
-  //     element: <Contact />,
-  //   },
-  //   {
-  //     path: "*",
-  //     element: <Notfound />,
-  //   },
-  // ]);
-
-
   return (
     <>
       <div className="light-mode">
@@ -73,8 +42,9 @@ function App() {
           onClick={() => handleMode()}
         ></button>
       </div>
-      {/* <RouterProvider router={router} /> */}
-
+      
+      
+      {/* routage */}
       <HashRouter>
       <Routes>
         <Route path="/" element={<Navigate replace to="/accueil" />} />
